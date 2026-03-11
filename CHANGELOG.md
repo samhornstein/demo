@@ -3,7 +3,7 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v??
+## 1.2.0dev
 
 ### Credits
 
@@ -11,7 +11,7 @@ Special thanks to the following for their reviews and assistance:
 
 - [Jen Reeve](https://github.com/jen-reeve)
 
-### Changes
+### Changed
 
 - [#54] Changed the `test_full.config` input samplesheet
 
