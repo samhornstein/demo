@@ -5,7 +5,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.2.0dev
 
-_..nothing yet.._
+### Credits
+
+Special thanks to the following for their reviews and assistance:
+
+- [Jen Reeve](https://github.com/jen-reeve)
+
+### Changed
+
+- [#54] Changed the `test_full.config` input samplesheet
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
