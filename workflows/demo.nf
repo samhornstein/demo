@@ -44,9 +44,9 @@ workflow DEMO {
         )
     }
 
-    // 
+    //
     // MODULE: Run Fastfetch (local module with no label)
-    // 
+    //
     FASTFETCH()
 
     //
