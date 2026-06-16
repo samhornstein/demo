@@ -2,6 +2,9 @@
     "-profile test": {
         "content": [
             {
+                "FASTFETCH": {
+                    "fastfetch": "2.49.0"
+                },
                 "FASTQC": {
                     "fastqc": "0.12.1"
                 },
@@ -9,10 +12,12 @@
                     "seqtk": "1.4-r122"
                 },
                 "Workflow": {
-                    "nf-core/demo": "v1.1.0"
+                    "nf-core/demo": "v1.2.0dev"
                 }
             },
             [
+                "fastfetch",
+                "fastfetch/fastfetch_output.txt",
                 "fastqc",
                 "fastqc/SAMPLE1_PE",
                 "fastqc/SAMPLE1_PE/SAMPLE1_PE_1_fastqc.html",
@@ -100,6 +105,7 @@
                 "pipeline_info/nf_core_demo_software_mqc_versions.yml"
             ],
             [
+                "fastfetch_output.txt:md5,4d988ec36072841904d929951f3420af",
                 "SAMPLE1_PE_sample1_R1.fastq.gz:md5,7dd2fd0d542d9259d9aed53550907fae",
                 "SAMPLE1_PE_sample1_R2.fastq.gz:md5,1995fe8488384d801807805f26ceca8a",
                 "SAMPLE2_PE_sample2_R1.fastq.gz:md5,05dba9c26396cbdbe0e6da26f037106e",
@@ -121,10 +127,10 @@
                 "multiqc_general_stats.txt:md5,0b54e4e764665bd57fe0f95216744a78"
             ]
         ],
+        "timestamp": "2026-06-16T15:24:06.946548258",
         "meta": {
-            "nf-test": "0.9.2",
-            "nextflow": "25.04.2"
-        },
-        "timestamp": "2025-06-26T20:06:21.191873263"
+            "nf-test": "0.9.5",
+            "nextflow": "26.04.3"
+        }
     }
 }
