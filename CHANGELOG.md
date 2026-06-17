@@ -14,6 +14,14 @@ Special thanks to the following for their reviews and assistance:
 ### Changed
 
 - [#54] Changed the `test_full.config` input samplesheet
+- [#56] Updated to nf-core template 4.0.2
+
+### Dependencies
+
+| Dependency | Old version | New version |
+| ---------- | ----------- | ----------- |
+| `multiqc`  | 1.33        | 1.34        |
+| `nextflow` | 24.04.2     | 25.10.4     |
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
