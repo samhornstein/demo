@@ -10,11 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Special thanks to the following for their reviews and assistance:
 
 - [Jen Reeve](https://github.com/jen-reeve)
+- [James Fellows Yates](https://github.com/jfy133)
+- [Matthias Hörtenhuber](https://github.com/mashehu)
+- [Christopher Hakkart](https://github.com/christopher-hakkaart)
 
 ### Changed
 
-- [#54] Changed the `test_full.config` input samplesheet
-- [#57] Added a new local module
+- [#54](https://github.com/nf-core/demo/pull/54) Changed the `test_full.config` input samplesheet
+- [#57](https://github.com/nf-core/demo/pull/) Added a new local module
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
