@@ -44,9 +44,9 @@ workflow DEMO {
         )
     }
 
-    // 
+    //
     // MODULE: Run COWPY (local module with no label)
-    // 
+    //
     COWPY()
 
     //
