@@ -11,7 +11,7 @@ include { paramsSummaryMultiqc   } from '../subworkflows/nf-core/utils_nfcore_pi
 include { softwareVersionsToYAML } from '../subworkflows/nf-core/utils_nfcore_pipeline'
 include { methodsDescriptionText } from '../subworkflows/local/utils_nfcore_demo_pipeline'
 
-include { FASTFETCH              } from '../modules/local/fastfetch/main'
+include { COWPY                  } from '../modules/local/cowpy/main'
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,9 +45,9 @@ workflow DEMO {
     }
 
     // 
-    // MODULE: Run Fastfetch (local module with no label)
+    // MODULE: Run COWPY (local module with no label)
     // 
-    FASTFETCH()
+    COWPY()
 
     //
     // Collate and save software versions

@@ -14,6 +14,7 @@ Special thanks to the following for their reviews and assistance:
 ### Changed
 
 - [#54] Changed the `test_full.config` input samplesheet
+- [#57] Added a new local module
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 

@@ -28,6 +28,7 @@
 1. Read QC ([`FASTQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/))
 2. Adapter and quality trimming ([`SEQTK_TRIM`](https://github.com/lh3/seqtk))
 3. Present QC for raw reads ([`MULTIQC`](http://multiqc.info/))
+4. Generate a lighthearted text message from a cow ([`COWPY`](https://github.com/jeffbuttars/cowpy))
 
 ## Usage
 
