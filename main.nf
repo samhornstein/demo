@@ -71,11 +71,11 @@ workflow {
         params.version,
         params.validate_params,
         params.monochrome_logs,
-        args,
-        params.input,
-        params.outdir,
-        params.help,
-        params.help_full,
+args,
+params.outdir,
+params.input,
+params.help,
+params.help_full,
         params.show_hidden,
     )
 
