@@ -18,10 +18,11 @@ Special thanks to the following for their reviews and assistance:
 
 ### Dependencies
 
-| Dependency | Old version | New version |
-| ---------- | ----------- | ----------- |
-| `multiqc`  | 1.33        | 1.34        |
-| `nextflow` | 24.04.2     | 25.10.4     |
+| Dependency  | Old version | New version |
+| ----------- | ----------- | ----------- |
+| `multiqc`   | 1.33        | 1.34        |
+| `nextflow`  | 24.04.2     | 25.10.4     |
+| `nf-schema` | 2.6.1       | 2.7.2       |
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
