@@ -15,7 +15,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-include { DEMO  } from './workflows/demo'
+include { DEMO                    } from './workflows/demo'
 include { PIPELINE_INITIALISATION } from './subworkflows/local/utils_nfcore_demo_pipeline'
 include { PIPELINE_COMPLETION     } from './subworkflows/local/utils_nfcore_demo_pipeline'
 include { getGenomeAttribute      } from './subworkflows/local/utils_nfcore_demo_pipeline'
@@ -38,7 +38,6 @@ params.fasta = getGenomeAttribute('fasta')
 // WORKFLOW: Run main analysis pipeline depending on type of input
 //
 workflow NFCORE_DEMO {
-
     take:
     samplesheet // channel: samplesheet read in from --input
 
@@ -47,9 +46,14 @@ workflow NFCORE_DEMO {
     //
     // WORKFLOW: Run pipeline
     //
-    DEMO (
-        samplesheet
+    DEMO(
+        samplesheet,
+        params.multiqc_config,
+        params.multiqc_logo,
+        params.multiqc_methods_description,
+        params.outdir,
     )
+
     emit:
     multiqc_report = DEMO.out.multiqc_report // channel: /path/to/multiqc_report.html
 }
@@ -60,43 +64,36 @@ workflow NFCORE_DEMO {
 */
 
 workflow {
-
-    main:
     //
     // SUBWORKFLOW: Run initialisation tasks
     //
-    PIPELINE_INITIALISATION (
+    PIPELINE_INITIALISATION(
         params.version,
         params.validate_params,
+        params.monochrome_logs,
         args,
         params.outdir,
+        params.input,
         params.help,
         params.help_full,
-        params.show_hidden
+        params.show_hidden,
     )
 
     //
     // WORKFLOW: Run main workflow
     //
-    NFCORE_DEMO (
+    NFCORE_DEMO(
         PIPELINE_INITIALISATION.out.samplesheet
     )
     //
     // SUBWORKFLOW: Run completion tasks
     //
-    PIPELINE_COMPLETION (
+    PIPELINE_COMPLETION(
         params.email,
         params.email_on_fail,
         params.plaintext_email,
         params.outdir,
         params.monochrome_logs,
-        params.hook_url,
-        NFCORE_DEMO.out.multiqc_report
+        NFCORE_DEMO.out.multiqc_report,
     )
 }
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    THE END
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
