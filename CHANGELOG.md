@@ -18,7 +18,7 @@ Special thanks to the following for their reviews and assistance:
 
 - [#54](https://github.com/nf-core/demo/pull/54) Changed the `test_full.config` input samplesheet
 - [#56](https://github.com/nf-core/demo/pull/56) Updated to nf-core template 4.0.2
-- [#57](https://github.com/nf-core/demo/pull/57) Added a new local module
+- [#57](https://github.com/nf-core/demo/pull/57) Added a new local module COWPY without resource label
 
 ### Dependencies
 
@@ -27,6 +27,7 @@ Special thanks to the following for their reviews and assistance:
 | `multiqc`   | 1.33        | 1.34        |
 | `nextflow`  | 24.04.2     | 25.10.4     |
 | `nf-schema` | 2.6.1       | 2.7.2       |
+| `cowpy`     |             | 1.1.5       |
 
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
