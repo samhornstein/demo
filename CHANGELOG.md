@@ -3,6 +3,32 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.2.0 - [2026-06-24]
+
+### Credits
+
+Special thanks to the following for their reviews and assistance:
+
+- [Jen Reeve](https://github.com/jen-reeve)
+- [James Fellows Yates](https://github.com/jfy133)
+- [Matthias Hörtenhuber](https://github.com/mashehu)
+- [Christopher Hakkart](https://github.com/christopher-hakkaart)
+
+### Changed
+
+- [#54](https://github.com/nf-core/demo/pull/54) Changed the `test_full.config` input samplesheet
+- [#56](https://github.com/nf-core/demo/pull/56) Updated to nf-core template 4.0.2
+- [#57](https://github.com/nf-core/demo/pull/57) Added a new local module COWPY without resource label
+
+### Dependencies
+
+| Dependency  | Old version | New version |
+| ----------- | ----------- | ----------- |
+| `multiqc`   | 1.33        | 1.34        |
+| `nextflow`  | 24.04.2     | 25.10.4     |
+| `nf-schema` | 2.6.1       | 2.7.2       |
+| `cowpy`     |             | 1.1.5       |
+
 ## [1.1.0](https://github.com/nf-core/demo/releases/tag/1.1.0) - 2026-01-26
 
 ### Credits
